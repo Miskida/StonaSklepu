@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.kontener{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". main ."
+    ". opis . "
+    ". footer .";
+}
+.contain{
+    grid-area: header;
+    margin-bottom: 1.5em;
+}
+.cont{
+    grid-area: main;
+    margin-bottom: 1.5em;
+}
+main{
+    grid-area: opis;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "opis zdjecia";
+}
+footer{
+    grid-area: footer;
+    font-weight: bold;
+    text-align: center;
+}
+section{
+    grid-area: opis;
+    margin-right: 1em;
+}
+aside{
+    grid-area: zdjecia;
+    display: grid;
+}
+figure{
+    text-align: center;
+    
+}

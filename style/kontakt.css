@@ -1,0 +1,76 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.kontener{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". header ."
+    ". mainhead ."
+    ". opis . "
+    ". footer .";
+}
+.contain{
+    grid-area: header;
+    margin-bottom: 1.5em;
+}
+main{
+    grid-area: opis;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "opis zdjecia";
+}
+footer{
+    grid-area: footer;
+    font-weight: bold;
+    text-align: center;
+}
+main>section{
+    text-align: center;
+    grid-area: opis;
+    border: 1px solid #d2d2d2;
+    margin: 0.5em;
+    padding: 0.5em;
+    
+    
+}
+figure{
+    margin: 1em;
+    border: 3px solid #000000;
+    padding: 1em;
+}
+aside{
+    grid-area: zdjecia;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+figure{
+    text-align: center;
+    
+}
+article{
+    text-align: center;
+}
+.mainhead{
+    grid-area: mainhead;
+    text-align: center;
+    margin: 1em;
+    border: 2px solid #d2d2d2;
+}
+aside>p{
+    font-weight: bold;
+}
+aside>div{
+    border: 1px solid #d2d2d2;
+}
+
+
+        
